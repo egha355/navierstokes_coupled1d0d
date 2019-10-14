@@ -27,3 +27,9 @@
 *.exe
 *.out
 *.app
+
+# Output Exfiles
+MainTime*
+
+# tilde outputs
+*~
