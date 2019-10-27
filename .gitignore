@@ -33,3 +33,10 @@ MainTime*
 
 # tilde outputs
 *~
+*#
+
+# Diagnostic files
+DiagnosticBloodFlow.ods
+
+# temporary files
+tempo*
