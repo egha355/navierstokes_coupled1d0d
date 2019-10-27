@@ -430,12 +430,12 @@ LINEAR_SOLVER_CHARACTERISTIC_OUTPUT_TYPE    = iron.SolverOutputTypes.NONE
 LINEAR_SOLVER_NAVIER_STOKES_OUTPUT_TYPE     = iron.SolverOutputTypes.NONE
 # (NONE/TIMING/SOLVER/MATRIX)
 CMISS_SOLVER_OUTPUT_TYPE = iron.SolverOutputTypes.NONE
-DYNAMIC_SOLVER_NAVIER_STOKES_OUTPUT_FREQUENCY = 1
+DYNAMIC_SOLVER_NAVIER_STOKES_OUTPUT_FREQUENCY = 10
 
 # Set the time parameters
-numberOfPeriods = 1.0
-timePeriod      = 0.1
-timeIncrement   = 0.001
+numberOfPeriods = 5.0
+timePeriod      = 800.0
+timeIncrement   = 0.1
 startTime       = 0.0
 stopTime  = numberOfPeriods*timePeriod
 dynamicSolverNavierStokesTheta = [1.0]
