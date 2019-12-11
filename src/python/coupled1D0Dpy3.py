@@ -433,7 +433,7 @@ CMISS_SOLVER_OUTPUT_TYPE = iron.SolverOutputTypes.NONE
 DYNAMIC_SOLVER_NAVIER_STOKES_OUTPUT_FREQUENCY = 10
 
 # Set the time parameters
-numberOfPeriods = 5.0
+numberOfPeriods = 1.0
 timePeriod      = 800.0
 timeIncrement   = 0.1
 startTime       = 0.0
