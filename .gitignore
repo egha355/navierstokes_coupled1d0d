@@ -29,7 +29,8 @@
 *.app
 
 # Output Exfiles
-MainTime*
+output/MainTime*
+CheckingFiles/
 
 # tilde outputs
 *~
