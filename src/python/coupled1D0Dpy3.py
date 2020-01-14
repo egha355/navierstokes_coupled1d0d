@@ -140,6 +140,13 @@ from opencmiss.iron import iron
 #iron.ErrorHandlingModeSet(iron.ErrorHandlingModes.TRAP_ERROR)
 #iron.OutputSetOn("Testing")
 
+# Set the OpenCMISS random seed so that we can test this example by using the
+# same parallel decomposition.
+numberOfRandomSeeds = iron.RandomSeedsSizeGet()
+randomSeeds = [0]*numberOfRandomSeeds
+randomSeeds[0] = 100
+iron.RandomSeedsSet(randomSeeds)
+
 # Get the computational nodes info
 numberOfComputationalNodes = iron.ComputationalNumberOfNodesGet()
 computationalNodeNumber    = iron.ComputationalNodeNumberGet()
@@ -430,7 +437,7 @@ LINEAR_SOLVER_CHARACTERISTIC_OUTPUT_TYPE    = iron.SolverOutputTypes.NONE
 LINEAR_SOLVER_NAVIER_STOKES_OUTPUT_TYPE     = iron.SolverOutputTypes.NONE
 # (NONE/TIMING/SOLVER/MATRIX)
 CMISS_SOLVER_OUTPUT_TYPE = iron.SolverOutputTypes.NONE
-DYNAMIC_SOLVER_NAVIER_STOKES_OUTPUT_FREQUENCY = 10
+DYNAMIC_SOLVER_NAVIER_STOKES_OUTPUT_FREQUENCY = 1
 
 # Set the time parameters
 numberOfPeriods = 1.0
