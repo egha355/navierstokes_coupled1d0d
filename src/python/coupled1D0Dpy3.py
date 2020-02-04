@@ -441,7 +441,7 @@ DYNAMIC_SOLVER_NAVIER_STOKES_OUTPUT_FREQUENCY = 1
 
 # Set the time parameters
 numberOfPeriods = 1.0
-timePeriod      = 800.0
+timePeriod      = 1000.0
 timeIncrement   = 0.1
 startTime       = 0.0
 stopTime  = numberOfPeriods*timePeriod

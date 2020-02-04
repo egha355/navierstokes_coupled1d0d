@@ -15,7 +15,7 @@ for ($i=0;$i<$steps;$i=$i+$dt)
      $time = $i/($dt*100)
      for ($j=0;$j<$cores;$j=$j+1)
        {
-          $filename = sprintf("./output/MainTime_%01d.part%01d.exnode", $i, $j);
+          $filename = sprintf("./expected_results/MainTime_%01d.part%01d.exnode", $i, $j);
           print "Reading $filename time $time\n";
           gfx read node "$filename" time $i;
        }
@@ -24,7 +24,7 @@ for ($i=0;$i<$steps;$i=$i+$dt)
 #Read in the element description
 for ($k=0;$k<$cores;$k=$k+1)
   {
-     $filename = sprintf("./output/MainTime_0.part%01d.exelem", $k);
+     $filename = sprintf("./expected_results/MainTime_0.part%01d.exelem", $k);
      gfx read element "$filename";
   }
 
